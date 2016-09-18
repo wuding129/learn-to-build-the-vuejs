@@ -1,7 +1,7 @@
 {
-  "name": "build-own-vue",
+  "name": "learn-to-build-the-vuejs",
   "version": "1.0.0",
-  "description": "learn how to build a framework such as Vue.js",
+  "description": "learn how to build the Vue.js",
   "main": "src/vue.js",
   "dependencies": {},
   "devDependencies": {
