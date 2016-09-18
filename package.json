@@ -1,0 +1,26 @@
+{
+  "name": "build-own-vue",
+  "version": "1.0.0",
+  "description": "learn how to build a framework such as Vue.js",
+  "main": "src/vue.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-karma": "^2.0.0",
+    "karma": "^1.3.0",
+    "karma-browserify": "^5.1.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-commonjs": "^1.0.0",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-safari-launcher": "^1.0.0"
+  },
+  "scripts": {
+    "test": "grunt travis"
+  },
+  "author": "",
+  "license": "ISC"
+}
