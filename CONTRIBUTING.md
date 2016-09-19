@@ -26,10 +26,13 @@
  ## Code Style
  
  - [No semicolons unless necessary](http://inimino.org/~inimino/blog/javascript_semicolons).
+ - Follow JSDoc.
  - 2 spaces indentation.
  - multiple var declarations.
- - align equal signs where possible.
- - Return early in one line if possible.
+ - align equal signs where appropriate.
+ - Return early.
+ - 1 space after `function`
+ - 1 space between arguments, but not between parens(括号).
  - When in doubt, read the source code.
  - Break long ternary conditionals like this:
  
