@@ -62,10 +62,17 @@ module.exports = function (grunt) {
             }
         }
     });
-
+    // load npm tasks
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-browserify');
+
+    // load custom tasks自定义任务
+    // 递归加载tasks下的所有任务文件
+    grunt.file.recurse('tasks', function (path) {
+        require('./' + path)(grunt)
+    });
+
     grunt.registerTask('unit', ['karma:browsers']);
     grunt.registerTask('watch', ['browserify:watch']);
     grunt.registerTask('build', ['browserify:build']);

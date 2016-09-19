@@ -1,11 +1,12 @@
 {
   "name": "learn-to-build-the-vuejs",
-  "version": "1.0.0",
+  "version": "0.11.0",
   "description": "learn how to build the Vue.js",
   "main": "src/vue.js",
   "dependencies": {},
   "devDependencies": {
     "browserify": "^13.1.0",
+    "casperjs": "^1.1.3",
     "grunt": "^1.0.1",
     "grunt-browserify": "^5.0.0",
     "grunt-contrib-jshint": "^1.0.0",
