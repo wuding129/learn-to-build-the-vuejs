@@ -92,3 +92,6 @@ http://jshint.com/docs/options/
 https://my.oschina.net/wjj328938669/blog/637433?p=1
 http://www.cnblogs.com/niubenbit/p/4267369.html
 http://www.cnblogs.com/CloudMu/archive/2014/05/28/3757536.html
+
+test文件夹中也要.jshintrc
+因为browserify版本问题gruntfile中的（旧）bundleOptions修改为（新）browserifyOptions
