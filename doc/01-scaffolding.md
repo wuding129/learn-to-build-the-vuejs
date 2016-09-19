@@ -14,7 +14,7 @@
 - compiler
 - - compiler.js
 
-- 批处理 ：batcher.js
+- 批处理/配料？ ：batcher.js
 - 绑定 ：binding.js
 - 指令 ：directive
 - 事件发射器 ：emitter

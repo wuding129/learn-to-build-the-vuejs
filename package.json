@@ -8,7 +8,9 @@
     "browserify": "^13.1.0",
     "grunt": "^1.0.1",
     "grunt-browserify": "^5.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
     "grunt-karma": "^2.0.0",
+    "jshint-stylish": "^2.2.1",
     "karma": "^1.3.0",
     "karma-browserify": "^5.1.0",
     "karma-chrome-launcher": "^2.0.0",
@@ -19,8 +21,6 @@
     "karma-safari-launcher": "^1.0.0"
   },
   "scripts": {
-    "test": "grunt travis"
-  },
-  "author": "",
-  "license": "ISC"
+    "test": "grunt ci"
+  }
 }

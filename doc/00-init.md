@@ -36,10 +36,10 @@
 
 
 ### 00.init
-    初始化npm install，安装grunt、单元测试工具karma
+- 初始化npm install，安装grunt、单元测试工具karma
 
 
----
+
 - 出现错误（karma报错module is not defined）：
 安装karma-commonjs
 - 出现浏览器报错闪退header。。。如何如何时：

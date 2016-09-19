@@ -26,11 +26,11 @@ _.mixin(Vue, require('./api/asset-register'));
 
 // 静态方法
 // static methods
-Vue.config      = require('./api/config');
-Vue.use         = require('./api/use');
-Vue.require     = require('./api/require');
-Vue.extend      = require('./api/extend');
-Vue.nextTick    = require('./util').nextTick;
+Vue.config   = require('./api/config');
+Vue.use      = require('./api/use');
+Vue.require  = require('./api/require');
+Vue.extend   = require('./api/extend');
+Vue.nextTick = require('./util').nextTick;
 
 module.exports = Vue;
 
