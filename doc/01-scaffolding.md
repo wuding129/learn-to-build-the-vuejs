@@ -26,7 +26,7 @@
 - - 生命周期 ：lifecycle
 
 - observer
-- - 观察者 observer
+- - 观察者/订阅 observer
 - - 监视数组 watch-array
 - - 监视对象 watch-object
 - 解析器 ：parsers
@@ -40,4 +40,13 @@
 - - js
 - - transition
 
+- 公共工具
+- - util
 
+- vue对象
+- - vue构造函数，
+
+通过掺和模式Mixin，讲方法拷贝到vue对象上
+
+具体可参考
+http://www.cnblogs.com/snandy/archive/2013/05/24/3086663.html

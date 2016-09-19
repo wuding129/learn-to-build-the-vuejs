@@ -44,3 +44,10 @@
 安装karma-commonjs
 - 出现浏览器报错闪退header。。。如何如何时：
 据说是旧版本依赖包所致，重新安装最新版的依赖包
+
+
+参考
+- https://my.oschina.net/shanlilaideyu/blog/487884
+- http://www.zuojj.com/archives/517.html
+- http://blog.fens.me/nodejs-karma-jasmine/
+- http://www.haomou.net/2015/03/10/2015_karma_jasmine/
