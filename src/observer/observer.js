@@ -64,6 +64,95 @@ var Emitter = require('../emitter');
  * @private
  * */
 function Observer () {
+
+    // 继承父类的基本属性和引用属性
     Emitter.call(this);
+
+
     this.connections = Object.create(null)
 }
+/**
+ *
+ * 继承EventEmiter  ES5
+
+    var EventEmitter = require("events").EventEmitter;
+
+    function MyClass() {
+        EventEmitter.call(this);
+    }
+
+     MyClass.prototype = Object.create(EventEmitter.prototype);
+
+     MyClass.prototype.doSomething = function(data) {
+        this.emit("doSomething", data);
+    }
+ *  ES6
+
+     var EventEmitter = require("events").EventEmitter;
+     class MyClass extends EventEmitter
+     {
+         constructor(){
+             super();
+         }
+
+         doSomething(data){
+             this.emit("doSomething", data);
+         }
+     }
+ *
+ * 继承这里现在比较晕，后面慢慢补，
+ * 待补知识：
+ * 1、new和Object.create的异同
+ * 2、各种继承方式的实现及优缺点
+ *
+ */
+var p = Observer.prototype = Object.create(Emitter.prototype);
+
+/**
+ *
+ * @param obj
+ * @return {boolean} 观察成功返回true
+ */
+p.observe = function (obj) {
+    if (obj && obj.$observer) {
+        // already observed
+        return
+    }
+    if (_.isArray(obj)) {
+        this.observeArray(obj);
+        return true
+    }
+    if (_.isObject(obj)) {
+        this.observeObject(obj);
+        return true
+    }
+};
+
+/**
+ * Connect to another Observer instance,
+ * capture its get/set/mutate(变化、变异) events and relay(传递) the events
+ * while prepending(前面加上) a key segment(字段) to the path.
+ *
+ * @param target {Observer}
+ * @param key {string}
+ */
+p.connect = function (target, key) {
+
+};
+
+/**
+ * 断开连接的观察者
+ * @param target {Observer}
+ * @param key {string}
+ */
+p.disconnect = function (target, key) {
+
+};
+
+/**
+ * 合并数组、对象的观察方法
+ */
+_.mixin(p, require('./array'));
+_.mixin(p, require('./object'));
+
+module.exports = Observer;

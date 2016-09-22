@@ -4,10 +4,13 @@
 var _        = require('./util'),
     Compiler = require('./compiler/compiler');
 
-/*
-* 暴露的vue构造函数
-* The exposed Vue constructor.
-* */
+/**
+ * 暴露的vue构造函数
+ * The exposed Vue constructor.
+ *
+ * @constructor
+ * @public
+ */
 function Vue(options) {
     this._compiler = new Compiler(this, options);
 }

@@ -92,3 +92,6 @@ if (typeof Object.create != 'function') {
 
 参考：
 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/create
+
+遗留待补充知识：
+1. js各种继承方式，es3/es5/es6
